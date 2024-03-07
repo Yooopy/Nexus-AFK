@@ -8,7 +8,7 @@ Now you have ten seconds to enter the game and let the program do its work.
 that's it! If you want to exit, move the mouse to the corner of the screen or come to the program and click exit.**
 
 
-# **Persian:
+# Persian:
 
 **Nexux ra baaz konid va vaared match shavid.
 az store , yek 'turret' begirid va roie spell e 'Q' gharar dahid (agar az ghabl roye 'Q' tanzim hast niaz nist tanzim konid)
