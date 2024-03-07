@@ -1,0 +1,98 @@
+#: import webbrowser webbrowser
+MDScreen:
+    md_bg_color: self.theme_cls.backgroundColor
+    MDCard:
+        spacing: 10
+        padding: 40
+        orientation: 'vertical'
+        theme_bg_color: "Custom"
+        md_bg_color: '#232323'
+        style: 'elevated'
+        theme_elevation_level: "Custom"
+        elevation_level: 4
+        size_hint: (0.85,0.85)
+        theme_shadow_softness: "Custom"
+        shadow_softness: 5
+        pos_hint: {'center_x': 0.5,'center_y': 0.5}
+        MDLabel:
+            valign: 'middle'
+            text: 'Nexux Afk Bot'
+            halign: 'center'
+            font_style: 'nasalization'
+            role: 'medium'
+            size_hint: 1,0.2
+        MDLabel:
+            id: textt
+            text: 'How many minutes do you want to use this?'
+            size_hint: 1,None
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        MDDivider:
+
+            size_hint_x: 0.8
+            pos_hint: {'center_x': 0.5,}
+        Widget:
+            size_hint_y: None
+            height: 10
+
+        MDCard:
+            orientation: 'horizontal'
+            radius: [20]
+            spacing: 15
+            padding: 15
+            style: 'elevated'
+            size_hint: 0.95,None
+            pos_hint: {'center_x': 0.5,'center_y': 0.5}
+            theme_bg_color: "Custom"
+            md_bg_color: '#282828'
+            MDTextField:
+                id: t_field
+                radius: [20]
+
+                MDTextFieldHintText:
+                    bold: True
+                    text: 'Minutes:'
+            MDButton:
+                style: 'filled'
+                height: 70
+                radius: 20
+                on_release: app.event()
+
+                MDButtonText:
+                    text: 'Start'
+                    font_style: 'Title'
+                    role: 'large'
+#        Widget:
+#            size_hint_y: None
+        MDButton:
+            style: 'text'
+            on_release: webbrowser.open('https://github.com/Yooopy/NEXUSAFK/raw/6693b959869369dbf7f064fcf8f5f8f7e1cd9b42/Hint.txt')
+            MDButtonText:
+
+                text: 'How it Works?'
+        BoxLayout:
+            spacing: 10
+            padding: 0
+            pos_hint: {'center_x': 0.5}
+            size_hint: None,None
+            orientation: 'horizontal'
+            MDIconButton:
+                icon: 'github'
+                on_release: webbrowser.open('https://github.com/Yooopy/NEXUSAFK')
+            MDDivider:
+                orientation: 'vertical'
+                size_hint_y: 0.5
+            MDIconButton:
+                on_release: app.email_dialog()
+                icon: 'yahoo'
+
+    MDLabel:
+        text: 'Made By V | 2024'
+        halign: 'center'
+        size_hint: 1,None
+        font_style: 'nasalization'
+        role: 'small'
+        theme_text_color: "Custom"
+        text_color: '#404040'
+        pos_hint: {'center_x': 0.5,'center_y': 0.03}
+
