@@ -1,7 +1,7 @@
 `import Vgeraph as V`   
 `from V.nickname import Yooopy`
 
-****Hi.. Im trying to code this maybe..     
+#### Hi.. Im trying to code this maybe..     
 1. if it will dont work.. NP   
 its allright and im enjoying:)**  
     V   

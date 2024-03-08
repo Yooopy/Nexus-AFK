@@ -1,4 +1,5 @@
 import sys
+from kivymd.icon_definitions import md_icons
 import time
 import webbrowser
 from threading import Timer
@@ -67,7 +68,7 @@ class MainApp(MDApp):
             }
         }  #<==
 
-        return Builder.load_file("loader.kv")
+        return Builder.load_file('loader.kv')
 
     def email_dialog(self):
         MDDialog(
@@ -159,6 +160,8 @@ class MainApp(MDApp):
                 self.space_and_r()
         except pyautogui.FailSafeException:
             sys.exit()
+        except ValueError:
+            self.root.ids.textt.text = 'Enter a valid number'
 
-if __name__ == '__main__':
-    MainApp().run()
+
+MainApp().run()
